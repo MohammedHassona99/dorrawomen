@@ -1,0 +1,152 @@
+.serves, .social-icons > a, .navbar-nav, .slider ul, .services .container, .sub-services .container .sub-ser {
+  background: -webkit-gradient(linear, left top, right top, from(#e95a85), color-stop(14%, #ce528b), color-stop(27%, #b44b90), color-stop(36%, #b04890), color-stop(45%, #ab4590), color-stop(69%, #843f8f), color-stop(91%, #613a8e));
+  background: linear-gradient(to right, #e95a85 0%, #ce528b 14%, #b44b90 27%, #b04890 36%, #ab4590 45%, #843f8f 69%, #613a8e 91%);
+}
+
+.navbar-nav, .slider ul, .slider .carousel-item, .services .container, .sub-services .container .sub-ser {
+  border-top-left-radius: 81.431px;
+  border-bottom-right-radius: 77.384px;
+}
+
+/* Start global service */
+.donation {
+  top: 80px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.serves {
+  top: 250px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  cursor: pointer;
+}
+
+/* End global service */
+/* Start Navbar */
+.navbar-toggler:focus {
+  outline: none;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.social-icons {
+  margin-left: 1rem;
+}
+
+.social-icons > a {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-icons > a svg {
+  color: white;
+  font-size: 14px;
+}
+
+.social-icons > a:hover svg {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.navbar-nav .nav-item:not(:last-of-type)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50%;
+  width: 1px;
+  background-color: white;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ENd Navbar */
+/* Start Slider */
+.slider ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.slider ul li {
+  position: relative;
+}
+
+.slider ul li:not(:last-of-type)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50%;
+  width: 1px;
+  background-color: white;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.slider ul a {
+  color: white;
+  font-weight: bold;
+}
+
+.slider ul a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* End Slider */
+/* Start Services */
+@media (max-width: 767px) {
+  .services .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* End Services */
+/* Start Sub Services */
+.sub-services .container .sub-ser {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.sub-services .container .sub-ser .sub-ser-img img {
+  max-width: 40px;
+}
+
+.sub-services .container .sub-ser .sub-ser-box {
+  color: white;
+  text-align: center;
+}
+
+/* End Sub Services */
+/*# sourceMappingURL=app.css.map */
