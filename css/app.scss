@@ -1,3 +1,19 @@
+body {
+  // height: 5000px;
+  font-family: "Tajawal", sans-serif;
+}
+::root {
+  --main: #ad4791;
+  --sub: #614d9b;
+  --text-color: #4e4d4d;
+  --orange: #f39322;
+}
+.color-main {
+  color: #ad4791;
+}
+.color-sub {
+  color: #614d9b !important;
+}
 %main-bg {
   background: linear-gradient(
     to right,
@@ -26,6 +42,7 @@
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   cursor: pointer;
+  z-index: 100;
 }
 /* End global service */
 /* Start Navbar */
@@ -137,10 +154,12 @@
     .sub-ser {
       @extend %main-bg;
       @extend %main-br;
-      padding-left: 10px;
-      padding-right: 10px;
       margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .sub-ser-img {
+        margin-left: 15px;
         img {
           max-width: 40px;
         }
@@ -153,3 +172,128 @@
   }
 }
 /* End Sub Services */
+/* Start Media Center */
+.media-center {
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url("./../images/media.png");
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    z-index: -1;
+    width: 197px;
+    height: 204px;
+    background-size: cover;
+  }
+  .media-box {
+    background-color: #e6e6e673;
+    @extend %main-br;
+    .media-head {
+      padding-top: 15px;
+      padding-right: 15px;
+      h5 {
+        width: 40%;
+      }
+      ul {
+        li {
+          padding: 5px 15px;
+          cursor: pointer;
+          color: var(--main);
+        }
+      }
+    }
+    .media-content {
+      .box {
+        transition: 0.5s;
+        cursor: pointer;
+        padding-top: 8px;
+        padding-right: 18px;
+        p.card-text {
+          font-size: 12px;
+        }
+        &:hover {
+          background-color: #fff;
+          box-shadow: 0px 0px 12px 2px rgb(78 77 77 / 9%);
+          @extend %main-br;
+        }
+      }
+      .more {
+        a {
+          &:hover {
+            color: #614d9b;
+          }
+        }
+      }
+    }
+  }
+}
+/* End Media Center */
+/* Start Web Services */
+.web-services {
+  .icon {
+    background-color: #ad4791;
+    width: fit-content;
+    img {
+      transition: 0.5s;
+    }
+    &:hover img {
+      transform: rotate(1turn);
+    }
+  }
+  // .desc{
+  //   font-size: 14px;
+  // }
+  form {
+    input[type="text"],
+    input[type="password"] {
+      background-color: #e6e6e673;
+      @extend %main-br;
+      padding: 8px 40px 8px 0;
+    }
+    .lables {
+      width: 85%;
+    }
+  }
+  input[type="submit"] {
+    border: none;
+    @extend %main-bg;
+    width: 50%;
+    border-radius: 15px;
+    color: #fff;
+    padding: 5px 0;
+  }
+}
+/* End Web Services */
+/* Start Our Projects */
+.our-projects {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("./../images/our-work.png");
+    z-index: -1;
+    top: 0;
+    left: 25%;
+    width: 242px;
+    height: 381px;
+    background-size: cover;
+  }
+
+  .last-twits {
+    position: relative;
+    width: fit-content;
+    padding-bottom: 2px;
+    font-size: 18px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #000;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+/* End Our Projects */
