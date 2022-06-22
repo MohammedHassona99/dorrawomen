@@ -17,12 +17,26 @@ body {
   color: #614d9b !important;
 }
 
-.web-services input[type=submit], .sub-services .container .sub-ser, .services .container, .slider ul, .navbar-nav, .social-icons > a, .serves {
+.fs-12 {
+  font-size: 13px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.our-projects form input[type=submit], .web-services input[type=submit], .sub-services .container .sub-ser, .services .container, .slider ul, .navbar-nav, .social-icons > a, .serves {
   background: linear-gradient(to right, rgb(233, 90, 133) 0%, rgb(206, 82, 139) 14%, rgb(180, 75, 144) 27%, rgb(176, 72, 144) 36%, rgb(171, 69, 144) 45%, rgb(132, 63, 143) 69%, rgb(97, 58, 142) 91%);
 }
 
-.web-services form input[type=text],
+.our-projects .owl-carousel, .our-projects form input[type=text],
+.our-projects form input[type=email], .web-services form input[type=text],
 .web-services form input[type=password], .media-center .media-box .media-content .box:hover, .media-center .media-box, .sub-services .container .sub-ser, .services .container, .slider .carousel-item, .slider ul, .navbar-nav {
+  border-top-left-radius: 81.431px;
+  border-bottom-right-radius: 77.384px;
+}
+
+.main-br {
   border-top-left-radius: 81.431px;
   border-bottom-right-radius: 77.384px;
 }
@@ -58,14 +72,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top-left-radius: 81.431px;
+  border-bottom-right-radius: 77.384px;
 }
 .social-icons > a svg {
   color: white;
   font-size: 14px;
+  transition: 0.7s;
 }
 .social-icons > a:hover svg {
   transform: rotate(1turn);
-  transition: 0.7s;
 }
 
 .navbar-nav .nav-item {
@@ -256,5 +272,69 @@ body {
   bottom: 0;
   right: 0;
 }
+.our-projects form input[type=text],
+.our-projects form input[type=email] {
+  background-color: rgba(230, 230, 230, 0.4509803922);
+}
+.our-projects form input[type=submit] {
+  border: none;
+  width: 100%;
+  border-radius: 15px;
+  color: #fff;
+  padding: 5px 0;
+}
+.our-projects .owl-carousel {
+  background-color: rgba(230, 230, 230, 0.4509803922);
+  padding: 5px;
+}
+.our-projects .owl-carousel div img {
+  width: 190px;
+  height: 70px;
+}
 
-/* End Our Projects *//*# sourceMappingURL=app.css.map */
+/* End Our Projects */
+/* Start Contact Us*/
+.contact-us {
+  background-color: #ad4791;
+  color: rgba(255, 255, 255, 0.8);
+}
+.contact-us ul li {
+  transition: 0.3s;
+}
+.contact-us ul li:hover {
+  color: #fff;
+}
+.contact-us a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+  font-size: 20px;
+}
+.contact-us a:hover {
+  color: #fff;
+}
+.contact-us span:hover {
+  color: #fff;
+}
+
+/* ENd Contact Us*/
+/* Start Footer */
+footer .visitor {
+  background-color: #f39322;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  padding: 5px 50px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+footer .visitor p {
+  margin: 0;
+}
+footer .copyright {
+  font-size: 13px;
+  color: #ad4791;
+}
+
+/* End Footer *//*# sourceMappingURL=app.css.map */

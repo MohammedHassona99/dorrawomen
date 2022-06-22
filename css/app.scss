@@ -14,6 +14,12 @@ body {
 .color-sub {
   color: #614d9b !important;
 }
+.fs-12 {
+  font-size: 13px;
+}
+.cursor {
+  cursor: pointer;
+}
 %main-bg {
   background: linear-gradient(
     to right,
@@ -27,6 +33,10 @@ body {
   );
 }
 %main-br {
+  border-top-left-radius: 81.431px;
+  border-bottom-right-radius: 77.384px;
+}
+.main-br {
   border-top-left-radius: 81.431px;
   border-bottom-right-radius: 77.384px;
 }
@@ -60,16 +70,18 @@ body {
     justify-content: center;
     align-items: center;
     @extend %main-bg;
+    border-top-left-radius: 81.431px;
+    border-bottom-right-radius: 77.384px;
     // @extend %main-br;
     // transform: rotate(-7deg) scale(1.1);
 
     svg {
       color: white;
       font-size: 14px;
+      transition: 0.7s;
     }
     &:hover svg {
       transform: rotate(1turn);
-      transition: 0.7s;
     }
   }
 }
@@ -295,5 +307,80 @@ body {
       right: 0;
     }
   }
+  form {
+    input[type="text"],
+    input[type="email"] {
+      background-color: #e6e6e673;
+      @extend %main-br;
+      // padding: 8px 40px 8px 0;
+    }
+    input[type="submit"] {
+      border: none;
+      @extend %main-bg;
+      width: 100%;
+      border-radius: 15px;
+      color: #fff;
+      padding: 5px 0;
+    }
+  }
+
+  .owl-carousel {
+    background-color: #e6e6e673;
+    @extend %main-br;
+    padding: 5px;
+    div {
+      img {
+        width: 190px;
+        height: 70px;
+      }
+    }
+  }
 }
 /* End Our Projects */
+/* Start Contact Us*/
+.contact-us {
+  background-color: #ad4791;
+  color: rgba($color: #fff, $alpha: 0.8);
+  ul {
+    li {
+      transition: 0.3s;
+    }
+    li:hover {
+      color: #fff;
+    }
+  }
+  a {
+    color: rgba($color: #fff, $alpha: 0.8);
+    transition: 0.3s;
+    font-size: 20px;
+    &:hover {
+      color: #fff;
+    }
+  }
+  span {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+/* ENd Contact Us*/
+/* Start Footer */
+footer {
+  .visitor {
+    background-color: #f39322;
+    width: fit-content;
+    color: #fff;
+    padding: 5px 50px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    p {
+      margin: 0;
+    }
+  }
+  .copyright {
+    font-size: 13px;
+    color: #ad4791;
+  }
+}
+/* End Footer */
